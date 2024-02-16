@@ -18,28 +18,29 @@
         <section id="heading" class="flex sm:grid sm:grid-cols-4 justify-between items-center h-7 mb-2">
             <div id="logo" class="sm:flex items-center gap-4">
                 <a href="/" class="font-bold text-3xl text-blue-600">facebook</a>
-                <span class="h-8 w-8 rounded-full bg-slate-200 sm:flex items-center justify-center hidden">
+                <span
+                    class="h-8 w-8  sm:hidden  rounded-full bg-slate-200 hover:bg-slate-300 md:flex items-center justify-center hidden">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </span>
             </div>
             <div id="navbar" class="hidden sm:col-span-2 sm:flex sm:items-center h-full w-full">
                 <ul class="list-none flex items-center h-full w-full justify-around">
-                    <li class="h-full flex items-center justify-center relative">
+                    <li class="h-full flex items-center justify-center relative hover:bg-slate-200 w-12 rounded-lg">
                         <i class="fa-solid fa-house fa-lg" style="color: #1f71ff;"></i>
                         <span class="absolute top-0 -end-3 rounded-lg text-white bg-red-600 text-xs px-1">
                             15+
                         </span>
                     </li>
-                    <li class="h-full flex items-center justify-center">
+                    <li class="h-full flex items-center justify-center hover:bg-slate-200 w-12 rounded-lg">
                         <i class="fa-solid fa-users fa-lg"></i>
                     </li>
-                    <li class="h-full flex items-center justify-center">
+                    <li class="h-full flex items-center justify-center hover:bg-slate-200 w-12 rounded-lg">
                         <i class="fa-solid fa-circle-play fa-lg"></i>
                     </li>
-                    <li class="h-full flex items-center justify-center">
+                    <li class="h-full flex items-center justify-center hover:bg-slate-200 w-12 rounded-lg">
                         <i class="fa-solid fa-store fa-lg"></i>
                     </li>
-                    <li class="h-full flex items-center justify-center">
+                    <li class="h-full flex items-center justify-center hover:bg-slate-200 w-12 rounded-lg">
                         <i class="fa-solid fa-bars fa-lg"></i>
                     </li>
                 </ul>
@@ -47,22 +48,26 @@
             <div id="tablet-navbar" class="h-full w-full  items-center sm:flex hidden">
                 <ul class="flex items-center gap-2">
                     <li>
-                        <span class="h-10 w-10  flex items-center justify-center rounded-full bg-slate-200">
+                        <span
+                            class="h-10 w-10  flex items-center justify-center rounded-full bg-slate-200 hover:bg-slate-300">
                             <i class="fa-solid fa-plus"></i>
                         </span>
                     </li>
                     <li>
-                        <span class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-200">
+                        <span
+                            class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-200 hover:bg-slate-300">
                             <i class="fa-solid fa-comment-dots"></i>
                         </span>
                     </li>
                     <li>
-                        <span class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-200">
+                        <span
+                            class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-200 hover:bg-slate-300">
                             <i class="fa-solid fa-bell"></i>
                         </span>
                     </li>
                     <li>
-                        <span class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-200">
+                        <span
+                            class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-200 hover:bg-slate-300">
                             <img src="https://randomuser.me/api/portraits/men/91.jpg"
                                 class="h-full w-full rounded-full" />
                         </span>
@@ -122,7 +127,7 @@
         </section>
     </header>
     <!-- End Heading-->
-    <main class="overflow-hidden sm:px-20 sm:py-4 py-2">
+    <main class="overflow-hidden sm:px-16 md:px-20 py-2">
         <div class="sm:flex sm:flex-col-reverse">
             <!-- What is on your mind section -->
             <section id="publish"
@@ -148,17 +153,19 @@
             <!-- End of What's on your mind section-->
             <!-- Stories section -->
             <section id="stories" class="bg-white sm:bg-transparent my-1 py-2 ps-4 sm:ps-0  w-full">
-                <div class="overflow-x-auto  inline-flex w-full gap-2">
+                <div class="overflow-x-auto no-scrollbar  inline-flex w-full gap-2">
                     <div
                         class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden relative shadow-sm">
-                        <div class="h-1/2">
+                        <div class="h-1/2 sm:h-4/5">
                             <img src="https://randomuser.me/api/portraits/men/91.jpg"
                                 class="h-full w-full rounded-t-lg" />
                         </div>
-                        <div class="h-1/2 flex items-center pb-1">
-                            <p class="font-bold text-wrap text-center"> Post on your story</p>
+                        <div class="h-1/2 sm:h-1/5 flex items-end pb-1">
+                            <p class="font-bold sm:font-medium sm:text-sm w-full text-wrap text-center"> Post on your
+                                story</p>
                         </div>
-                        <div class="bg-transparent inset-0 flex items-center justify-center absolute">
+                        <div
+                            class="bg-transparent inset-0 flex items-center sm:items-end sm:mb-6 justify-center absolute">
                             <span
                                 class="h-10 w-10 border-4 border-white bg-blue-500 rounded-full flex items-center justify-center">
                                 <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
@@ -217,16 +224,19 @@
         </div>
         <!-- End stories section -->
         <div class="hidden sm:block w-full h-16 border-t bg-white rounded-b-lg shadow-lg  border-gray-200">
-            <ul class="flex justify-between w-full h-full items-center px-10">
-                <li class="flex gap-2 items-center px-10 rounded-lg py-2 h-fit hover:bg-gray-300 duration-300">
+            <ul class="flex justify-between w-full h-full items-center px-10 md:px-2">
+                <li
+                    class="flex gap-2 items-center md:px-10 sm:px-3 rounded-lg py-2 h-fit hover:bg-gray-300 duration-300">
                     <i class="fa-solid fa-video" style="color: #f2072b;"></i>
                     <span class="font-semibold">Live</span>
                 </li>
-                <li class="flex gap-2 items-center px-10 rounded-lg py-2 h-fit hover:bg-gray-300 duration-300">
+                <li
+                    class="flex gap-2 items-center md:px-10 sm:px-3 rounded-lg py-2 h-fit hover:bg-gray-300 duration-300">
                     <i class="fa-solid fa-images" style="color: #63E6BE;"></i>
                     <span class="font-semibold">Photo/Video</span>
                 </li>
-                <li class="flex gap-2 items-center px-10 rounded-lg py-2 h-fit hover:bg-gray-300 duration-300">
+                <li
+                    class="flex gap-2 items-center md:px-10 sm:px-3 rounded-lg py-2 h-fit hover:bg-gray-300 duration-300">
                     <i class="fa-solid fa-face-smile" style="color: #FFD43B;"></i>
                     <span class="font-semibold">Feelings</span>
                 </li>
@@ -234,7 +244,7 @@
         </div>
         <!-- Publications section -->
         <section id="publications" class="w-ful my-2 ">
-            <div class="bg-white grid h-fit mb-2" id="first-publication">
+            <div class="bg-white grid h-fit mb-2 sm:rounded-lg sm:shadow" id="first-publication">
                 <div class="grid grid-cols-3">
                     <div class="col-span-2 flex p-2 gap-2">
                         <img class="h-12 w-12 bg-blue-500 rounded-full"
@@ -268,29 +278,45 @@
                         src="https://images.unsplash.com/photo-1707343843982-f8275f3994c5?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
                 </div>
                 <div class="h-fit w-full flex items-center p-2">
-                    <ul class="inline-flex gap-2 items-center h-full justify-between w-full">
-                        <li>
-                            <button class="rounded-xl bg-slate-200 gap-2 w-28 h-10 flex justify-center items-center">
+                    <ul
+                        class="inline-flex py-1 gap-2 border-b border-t border-gray-200 items-center h-full justify-between w-full">
+                        <li class="sm:w-full">
+                            <button
+                                class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
                                 <i class="fa-solid fa-thumbs-up fa-lg" style="color: #5a5a5a;"></i>
                                 <span class="text-xs font-bold text-gray-700">Like</span>
                             </button>
                         </li>
-                        <li>
-                            <button class="rounded-xl bg-slate-200 gap-2 w-28 h-10 flex justify-center items-center">
+                        <li class="sm:w-full">
+                            <button
+                                class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
                                 <i class="fa-solid fa-comment fa-lg" style="color: #5a5a5a;"></i>
                                 <span class="text-xs font-bold text-gray-700">Comment</span>
                             </button>
                         </li>
-                        <li>
-                            <button class="rounded-xl bg-slate-200 gap-2 w-28 h-10 flex justify-center items-center">
+                        <li class="sm:w-full">
+                            <button
+                                class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
                                 <i class="fa-solid fa-share fa-lg" style="color: #5a5a5a;"></i>
                                 <span class="text-xs font-bold text-gray-700">Share</span>
                             </button>
                         </li>
                     </ul>
                 </div>
+                <div class="hidden sm:block w-full p-4">
+                    <div class="w-full h-10 py-2 inline-flex items-center gap-2">
+                        <span class="h-10 w-10 rounded-full bg-slate-200">
+                            <img src="https://randomuser.me/api/portraits/men/91.jpg"
+                                class="h-full w-full rounded-full" />
+                        </span>
+                        <div class="w-full">
+                            <input class="w-full h-10 rounded-full bg-slate-200 px-2 outline-none"
+                                placeholder="Write a comment..." />
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bg-white grid h-fit mb-2" id="second-publication">
+            <div class="bg-white grid h-fit mb-2 sm:rounded-lg sm:shadow" id="second-publication">
                 <div class="grid grid-cols-3">
                     <div class="col-span-2 flex p-2 gap-2">
                         <img class="h-12 w-12 bg-blue-500 rounded-full"
@@ -326,29 +352,45 @@
                         src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
                 </div>
                 <div class="h-fit w-full flex items-center p-2">
-                    <ul class="inline-flex gap-2 items-center h-full justify-between w-full">
-                        <li>
-                            <button class="rounded-xl bg-slate-200 gap-2 w-28 h-10 flex justify-center items-center">
+                    <ul
+                        class="inline-flex gap-2 items-center h-full justify-between w-full border-t border-b border-gray-300 py-1">
+                        <li class="sm:w-full">
+                            <button
+                                class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
                                 <i class="fa-solid fa-thumbs-up fa-lg" style="color: #5a5a5a;"></i>
                                 <span class="text-xs font-bold text-gray-700">1256</span>
                             </button>
                         </li>
-                        <li>
-                            <button class="rounded-xl bg-slate-200 gap-2 w-28 h-10 flex justify-center items-center">
+                        <li class="sm:w-full">
+                            <button
+                                class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
                                 <i class="fa-solid fa-comment fa-lg" style="color: #5a5a5a;"></i>
                                 <span class="text-xs font-bold text-gray-700">46</span>
                             </button>
                         </li>
-                        <li>
-                            <button class="rounded-xl bg-slate-200 gap-2 w-28 h-10 flex justify-center items-center">
+                        <li class="sm:w-full">
+                            <button
+                                class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
                                 <i class="fa-solid fa-share fa-lg" style="color: #5a5a5a;"></i>
                                 <span class="text-xs font-bold text-gray-700">12</span>
                             </button>
                         </li>
                     </ul>
                 </div>
+                <div class="hidden sm:block w-full p-4">
+                    <div class="w-full h-10 py-2 inline-flex items-center gap-2">
+                        <span class="h-10 w-10 rounded-full bg-slate-200">
+                            <img src="https://randomuser.me/api/portraits/men/91.jpg"
+                                class="h-full w-full rounded-full" />
+                        </span>
+                        <div class="w-full">
+                            <input class="w-full h-10 rounded-full bg-slate-200 px-2 outline-none"
+                                placeholder="Write a comment..." />
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bg-white grid h-fit mb-2" id="thir-publication">
+            <div class="bg-white grid h-fit mb-2 sm:rounded-lg sm:shadow" id="third-publication">
                 <div class="grid grid-cols-3">
                     <div class="col-span-2 flex p-2 gap-2">
                         <img class="h-12 w-12 bg-blue-500 rounded-full"
@@ -384,33 +426,49 @@
                         src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
                 </div>
                 <div class="h-fit w-full flex items-center p-2">
-                    <ul class="inline-flex gap-2 items-center h-full justify-between w-full">
-                        <li>
-                            <button class="rounded-xl bg-slate-200 gap-2 w-28 h-10 flex justify-center items-center">
+                    <ul
+                        class="inline-flex gap-2 items-center h-full justify-between w-full border-b border-t border-gray-300 py-1">
+                        <li class="sm:w-full">
+                            <button
+                                class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
                                 <i class="fa-solid fa-thumbs-up fa-lg" style="color: #5a5a5a;"></i>
                                 <span class="text-xs font-bold text-gray-700">+1 Mi</span>
                             </button>
                         </li>
-                        <li>
-                            <button class="rounded-xl bg-slate-200 gap-2 w-28 h-10 flex justify-center items-center">
+                        <li class="sm:w-full">
+                            <button
+                                class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
                                 <i class="fa-solid fa-comment fa-lg" style="color: #5a5a5a;"></i>
                                 <span class="text-xs font-bold text-gray-700">5368</span>
                             </button>
                         </li>
-                        <li>
-                            <button class="rounded-xl bg-slate-200 gap-2 w-28 h-10 flex justify-center items-center">
+                        <li class="sm:w-full">
+                            <button
+                                class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
                                 <i class="fa-solid fa-share fa-lg" style="color: #5a5a5a;"></i>
                                 <span class="text-xs font-bold text-gray-700">+20 k</span>
                             </button>
                         </li>
                     </ul>
                 </div>
+                <div class="hidden sm:block w-full p-4">
+                    <div class="w-full h-10 py-2 inline-flex items-center gap-2">
+                        <span class="h-10 w-10 rounded-full bg-slate-200">
+                            <img src="https://randomuser.me/api/portraits/men/91.jpg"
+                                class="h-full w-full rounded-full" />
+                        </span>
+                        <div class="w-full">
+                            <input class="w-full h-10 rounded-full bg-slate-200 px-2 outline-none"
+                                placeholder="Write a comment..." />
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- End of publications section -->
         <!-- Loading publications section-->
         <section id="loading-publications"
-            class="w-full flex flex-col gap-4 justify-center items-center py-10 bg-gray-300">
+            class="w-full flex flex-col gap-4 justify-center items-center py-10 bg-gray-300 sm:rounded-lg">
             <i class="fa-solid fa-spinner fa-spin fa-xl" style="color: #383838;"></i>
             <span class="font-bold text-gray-700">Loading more publications...
             </span>
