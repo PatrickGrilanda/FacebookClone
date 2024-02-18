@@ -12,9 +12,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-slate-200">
+<body class="bg-slate-200 overflow-hidden">
     <!-- Heading -->
-    <header class="w-full p-2 sm:p-4 border-b border-gray-300 shadow bg-white h-auto">
+    <header class="w-full p-2 sm:p-4 border-b border-gray-300 shadow bg-white h-auto xl:sticky xl:top-0 xl:z-20">
         <section id="heading" class="flex sm:grid sm:grid-cols-4 justify-between items-center h-7 mb-2">
             <div id="logo" class="sm:flex items-center gap-4">
                 <a href="/" class="font-bold text-3xl text-blue-600">facebook</a>
@@ -127,354 +127,415 @@
         </section>
     </header>
     <!-- End Heading-->
-    <main class="overflow-hidden sm:px-16 md:px-20 py-2">
-        <div class="sm:flex sm:flex-col-reverse">
-            <!-- What is on your mind section -->
-            <section id="publish"
-                class="grid grid-cols-6 border-b rounded-lg bg-white w-full h-auto border-gray-300 shadow p-2 items-center">
-                <div>
-                    <div class="h-12 w-12 bg-slate-200 rounded-full relative">
+    <div class="xl:grid-cols-4 lg:grid-cols-6 lg:grid h-full w-full">
+        <aside class="hidden xl:block xl:w-full xl:overflow-y-auto xl:max-h-screen px-2 py-4">
+            <ul class="list-none flex-col h-fit xl:w-3/4 lg:w-full">
+                <li class="flex items-center gap-2 mb-2 hover:bg-gray-300 p-2 rounded-lg cursor-pointer">
+                    <div class="h-8 w-8  bg-slate-200 rounded-full">
                         <img src="https://randomuser.me/api/portraits/men/91.jpg" class="w-full h-full rounded-full">
-                        <span
-                            class="h-4 w-4 border-2 border-white  rounded-full bg-green-400 bottom-0 end-0 absolute z-10"></span>
                     </div>
-                </div>
-                <div class="col-span-4">
-                    <input
-                        class="bg-slate-200 w-full rounded-full placeholder:text-wrap placeholder:text-gray-800 placeholder:text-sm placeholder:px-2 h-10"
-                        placeholder="What is on your mind ?" />
-                </div>
-                <div class="h-full">
-                    <div class="flex flex-col justify-center items-center h-full">
-                        <i class="fa-solid fa-images fa-2xl" style="color: #20ee49;"></i>
+                    <span class="font-semibold text-gray-800">Paul Smith</span>
+                </li>
+                <li class="flex items-center gap-2 mb-2 hover:bg-gray-300 p-2 rounded-lg cursor-pointer">
+                    <i data-visualcompletion="css-img" class=""
+                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/4GR4KRf3hN2.png?_nc_eui2=AeHnG0wI8Oyvx7akFRWpaPDuiXYVTRy2fzKJdhVNHLZ_MtH3zu2eqdFf4Rg8nCHdcxu7M3v6PiYdDPTChYhbrYkS&quot;); background-position: 0px -296px; background-size: auto; width: 36px; height: 36px; background-repeat: no-repeat; display: inline-block;"></i>
+                    <span class="font-semibold text-gray-800">Friends</span>
+                </li>
+                <li class="flex items-center gap-2 mb-2 hover:bg-gray-300 p-2 rounded-lg cursor-pointer">
+                    <i data-visualcompletion="css-img" class=""
+                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/4GR4KRf3hN2.png?_nc_eui2=AeHnG0wI8Oyvx7akFRWpaPDuiXYVTRy2fzKJdhVNHLZ_MtH3zu2eqdFf4Rg8nCHdcxu7M3v6PiYdDPTChYhbrYkS&quot;); background-position: 0px -185px; background-size: auto; width: 36px; height: 36px; background-repeat: no-repeat; display: inline-block;"></i>
+                    <span class="font-semibold text-gray-800">Saved</span>
+                </li>
+                <li class="flex items-center gap-2 mb-2 hover:bg-gray-300 p-2 rounded-lg cursor-pointer">
+                    <i data-visualcompletion="css-img" class=""
+                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/4GR4KRf3hN2.png?_nc_eui2=AeHnG0wI8Oyvx7akFRWpaPDuiXYVTRy2fzKJdhVNHLZ_MtH3zu2eqdFf4Rg8nCHdcxu7M3v6PiYdDPTChYhbrYkS&quot;); background-position: 0px -444px; background-size: auto; width: 36px; height: 36px; background-repeat: no-repeat; display: inline-block;"></i>
+                    <span class="font-semibold text-gray-800">Memories</span>
+                </li>
+                <li class="flex items-center gap-2 mb-2 hover:bg-gray-300 p-2 rounded-lg cursor-pointer">
+                    <i data-visualcompletion="css-img" class=""
+                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/4GR4KRf3hN2.png?_nc_eui2=AeHnG0wI8Oyvx7akFRWpaPDuiXYVTRy2fzKJdhVNHLZ_MtH3zu2eqdFf4Rg8nCHdcxu7M3v6PiYdDPTChYhbrYkS&quot;); background-position: 0px -37px; background-size: auto; width: 36px; height: 36px; background-repeat: no-repeat; display: inline-block;"></i>
+                    <span class="font-semibold text-gray-800">Groups</span>
+                </li>
+                <li class="flex items-center gap-2 mb-2 hover:bg-gray-300 p-2 rounded-lg cursor-pointer">
+                    <i data-visualcompletion="css-img" class=""
+                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/4GR4KRf3hN2.png?_nc_eui2=AeHnG0wI8Oyvx7akFRWpaPDuiXYVTRy2fzKJdhVNHLZ_MtH3zu2eqdFf4Rg8nCHdcxu7M3v6PiYdDPTChYhbrYkS&quot;); background-position: 0px -518px; background-size: auto; width: 36px; height: 36px; background-repeat: no-repeat; display: inline-block;"></i>
+                    <span class="font-semibold text-gray-800">Videos</span>
+                </li>
+                <li class="flex items-center gap-2 mb-2 hover:bg-gray-300 p-2 rounded-lg cursor-pointer">
+                    <div class="bg-slate-300 hover:bg-slate-400 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true">
+                            <g fill-rule="evenodd" transform="translate(-448 -544)">
+                                <path fill-rule="nonzero"
+                                    d="M452.707 549.293a1 1 0 0 0-1.414 1.414l4 4a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L456 552.586l-3.293-3.293z">
+                                </path>
+                            </g>
+                        </svg>
                     </div>
-                </div>
-            </section>
-            <!-- End of What's on your mind section-->
-            <!-- Stories section -->
-            <section id="stories" class="bg-white sm:bg-transparent my-1 py-2 ps-4 sm:ps-0  w-full">
-                <div class="overflow-x-auto no-scrollbar  inline-flex w-full gap-2">
-                    <div
-                        class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden relative shadow-sm">
-                        <div class="h-1/2 sm:h-4/5">
+                    <span class="font-semibold text-gray-800">See More</span>
+                </li>
+                <hr class="w-full" />
+            </ul>
+        </aside>
+        <main
+            class="overflow-hidden xl:overflow-y-auto lg:col-span-4 xl:col-span-2 lg:px-10 xl:px-16 xl:pb-40 sm:px-16 md:px-20 xl:p-0 py-2 xl:max-h-screen no-scrollbar">
+            <div class="sm:flex sm:flex-col-reverse">
+                <!-- What is on your mind section -->
+                <section id="publish"
+                    class="grid grid-cols-6 xl:grid-cols-8 border-b rounded-lg bg-white w-full h-auto border-gray-300 shadow p-2 items-center">
+                    <div class="xl:flex xl:justify-center xl:w-full">
+                        <div class="h-12 w-12  bg-slate-200 rounded-full relative">
                             <img src="https://randomuser.me/api/portraits/men/91.jpg"
-                                class="h-full w-full rounded-t-lg" />
+                                class="w-full h-full rounded-full">
+                            <span
+                                class="h-4 w-4 border-2 border-white  rounded-full bg-green-400 bottom-0 end-0 absolute z-10"></span>
                         </div>
-                        <div class="h-1/2 sm:h-1/5 flex items-end pb-1">
-                            <p class="font-bold sm:font-medium sm:text-sm w-full text-wrap text-center"> Post on your
-                                story</p>
+                    </div>
+                    <div class="col-span-4 xl:col-span-7">
+                        <input
+                            class="bg-slate-200 w-full rounded-full placeholder:text-wrap placeholder:text-gray-800 placeholder:text-sm placeholder:px-2 h-10"
+                            placeholder="What is on your mind ?" />
+                    </div>
+                    <div class="h-full xl:hidden">
+                        <div class="flex flex-col justify-center items-center h-full">
+                            <i class="fa-solid fa-images fa-2xl" style="color: #20ee49;"></i>
+                        </div>
+                    </div>
+                </section>
+                <!-- End of What's on your mind section-->
+                <!-- Stories section -->
+                <section id="stories" class="bg-white sm:bg-transparent my-1 py-2 ps-4 sm:ps-0  w-full">
+                    <div class="overflow-x-auto no-scrollbar  inline-flex w-full gap-2">
+                        <div
+                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden relative shadow-sm">
+                            <div class="h-1/2 sm:h-4/5">
+                                <img src="https://randomuser.me/api/portraits/men/91.jpg"
+                                    class="h-full w-full rounded-t-lg" />
+                            </div>
+                            <div class="h-1/2 sm:h-1/5 flex items-end pb-1">
+                                <p class="font-bold sm:font-medium sm:text-sm w-full text-wrap text-center"> Post on
+                                    your
+                                    story</p>
+                            </div>
+                            <div
+                                class="bg-transparent inset-0 flex items-center sm:items-end sm:mb-6 justify-center absolute">
+                                <span
+                                    class="h-10 w-10 border-4 border-white bg-blue-500 rounded-full flex items-center justify-center">
+                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                </span>
+                            </div>
                         </div>
                         <div
-                            class="bg-transparent inset-0 flex items-center sm:items-end sm:mb-6 justify-center absolute">
+                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative">
                             <span
-                                class="h-10 w-10 border-4 border-white bg-blue-500 rounded-full flex items-center justify-center">
-                                <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                class="absolute top-2 start-2 bg-blue-500 text-white font-bold text-xs px-1 rounded-lg">21</span>
+                            <div class="h-full ">
+                                <img src="https://images.unsplash.com/photo-1501426026826-31c667bdf23d?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="h-full rounded-t-lg" />
+                            </div>
+                            <span class="absolute bottom-2 start-2 text-white font-bold text-sm text-wrap w-4">Tina
+                                Doe</span>
+                        </div>
+                        <div
+                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative">
+                            <span
+                                class="absolute top-2 start-2 bg-blue-500 text-white font-bold text-xs px-1 rounded-lg">2</span>
+                            <div class="h-full ">
+                                <img src="https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="h-full rounded-t-lg" />
+                            </div>
+                            <span class="absolute bottom-2 start-2 text-white font-bold text-sm text-wrap w-4">Terry
+                                Adams</span>
+                        </div>
+                        <div
+                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative">
+                            <span
+                                class="absolute top-2 start-2 bg-blue-500 text-white font-bold text-xs px-1 rounded-lg">7</span>
+                            <div class="h-full ">
+                                <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="h-full rounded-t-lg" />
+                            </div>
+                            <span class="absolute bottom-2 start-2 text-white font-bold text-sm text-wrap w-4">John
+                                Doe</span>
+                        </div>
+                        <div
+                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative">
+                            <span
+                                class="absolute top-2 start-2 bg-blue-500 text-white font-bold text-xs px-1 rounded-lg">3</span>
+                            <div class="h-full ">
+                                <img src="https://images.unsplash.com/photo-1534179523731-b2922018150a?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="h-full rounded-t-lg" />
+                            </div>
+                            <span class="absolute bottom-2 start-2 text-white font-bold text-sm text-wrap w-4">Ashley
+                                Benson</span>
+                        </div>
+                        <div class="h-44 w-20 sm:min-h-4 sm:min-w-20 flex items-center justify-center">
+                            <i class="fa-solid fa-spinner fa-spin fa-sm" style="color: #000fff;"></i>
+                        </div>
+                    </div>
+                </section>
+                <!-- End stories section -->
+            </div>
+            <div class="hidden sm:block w-full h-16 border-t bg-white rounded-b-lg shadow-lg  border-gray-200">
+                <ul class="flex justify-between w-full h-full items-center px-10 md:px-2">
+                    <li
+                        class="flex gap-2 items-center md:px-10 sm:px-3 rounded-lg py-2 h-fit hover:bg-gray-300 duration-300">
+                        <i class="fa-solid fa-video" style="color: #f2072b;"></i>
+                        <span class="font-semibold">Live</span>
+                    </li>
+                    <li
+                        class="flex gap-2 items-center md:px-10 sm:px-3 rounded-lg py-2 h-fit hover:bg-gray-300 duration-300">
+                        <i class="fa-solid fa-images" style="color: #63E6BE;"></i>
+                        <span class="font-semibold">Photo/Video</span>
+                    </li>
+                    <li
+                        class="flex gap-2 items-center md:px-10 sm:px-3 rounded-lg py-2 h-fit hover:bg-gray-300 duration-300">
+                        <i class="fa-solid fa-face-smile" style="color: #FFD43B;"></i>
+                        <span class="font-semibold">Feelings</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Publications section -->
+            <section id="publications" class="w-ful my-2">
+                <div class="bg-white grid h-fit mb-2 sm:rounded-lg sm:shadow xl:my-7" id="first-publication">
+                    <div class="grid grid-cols-3">
+                        <div class="col-span-2 flex p-2 xl:p-4 gap-2">
+                            <img class="h-12 w-12 bg-blue-500 rounded-full"
+                                src="https://randomuser.me/api/portraits/men/79.jpg" />
+                            <div class="flex flex-col">
+                                <div class="flex gap-2 items-center">
+                                    <h3 class="font-bold text-lg text-nowrap">Eduard Doe</h3>
+                                    <span class="h-1 w-1 bg-gray-700 rounded-full"></span>
+                                    <h3 class="font-bold text-sm text-blue-500">Follow</h3>
+                                </div>
+                                <div class="inline-flex gap-2 items-center">
+                                    <span class="text-xs text-gray-400">1 min</span>
+                                    <span class="h-1 w-1 bg-gray-400 rounded-full"></span>
+                                    <i class="fa-solid fa-earth-americas fa-xs" style="color: #707070;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-1">
+                            <div class="flex w-full justify-end items-center px-2 xl:px-4 h-full">
+                                <i class="fa-solid fa-ellipsis fa-xl" style="color: #6b6b6b;"></i>
+                            </div>
+                        </div>
+                        <div id="publication-comment" class="col-span-3">
+                            <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nostrum
+                                eveniet
+                                numquam! Voluptatibus voluptas ducimus nobis, soluta officia modi ullam magni, aliquam
+                                laudantium fugit, sit temporibus necessitatibus explicabo veniam ea.</p>
+                        </div>
+                    </div>
+                    <div class="h-72 xl:h-96 w-full">
+                        <img class="h-full w-full"
+                            src="https://images.unsplash.com/photo-1707343843982-f8275f3994c5?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                    </div>
+                    <div class="h-fit w-full flex items-center p-2">
+                        <ul
+                            class="inline-flex py-1 gap-2 border-b border-t border-gray-200 items-center h-full justify-between w-full">
+                            <li class="sm:w-full">
+                                <button
+                                    class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
+                                    <i class="fa-solid fa-thumbs-up fa-lg" style="color: #5a5a5a;"></i>
+                                    <span class="text-xs font-bold text-gray-700">Like</span>
+                                </button>
+                            </li>
+                            <li class="sm:w-full">
+                                <button
+                                    class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
+                                    <i class="fa-solid fa-comment fa-lg" style="color: #5a5a5a;"></i>
+                                    <span class="text-xs font-bold text-gray-700">Comment</span>
+                                </button>
+                            </li>
+                            <li class="sm:w-full">
+                                <button
+                                    class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
+                                    <i class="fa-solid fa-share fa-lg" style="color: #5a5a5a;"></i>
+                                    <span class="text-xs font-bold text-gray-700">Share</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hidden sm:block w-full p-4">
+                        <div class="w-full h-10 py-2 inline-flex items-center gap-2">
+                            <span class="h-10 w-10 rounded-full bg-slate-200">
+                                <img src="https://randomuser.me/api/portraits/men/91.jpg"
+                                    class="h-full w-full rounded-full" />
                             </span>
+                            <div class="w-full">
+                                <input class="w-full h-10 rounded-full bg-slate-200 px-2 outline-none"
+                                    placeholder="Write a comment..." />
+                            </div>
                         </div>
                     </div>
-                    <div
-                        class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative">
-                        <span
-                            class="absolute top-2 start-2 bg-blue-500 text-white font-bold text-xs px-1 rounded-lg">21</span>
-                        <div class="h-full ">
-                            <img src="https://images.unsplash.com/photo-1501426026826-31c667bdf23d?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                class="h-full rounded-t-lg" />
+                </div>
+                <div class="bg-white grid h-fit mb-2 sm:rounded-lg sm:shadow xl:my-7" id="second-publication">
+                    <div class="grid grid-cols-3">
+                        <div class="col-span-2 flex p-2 xl:p-4 gap-2">
+                            <img class="h-12 w-12 bg-blue-500 rounded-full"
+                                src="https://randomuser.me/api/portraits/men/59.jpg" />
+                            <div class="flex flex-col">
+                                <div class="flex gap-2 items-center">
+                                    <h3 class="font-bold text-lg text-nowrap">Rick Ryan</h3>
+                                    <span class="h-1 w-1 bg-gray-700 rounded-full"></span>
+                                    <h3 class="font-bold text-sm text-blue-500">Following</h3>
+                                </div>
+                                <div class="inline-flex gap-2 items-center">
+                                    <span class="text-xs text-gray-400">1 day</span>
+                                    <span class="h-1 w-1 bg-gray-400 rounded-full"></span>
+                                    <i class="fa-solid fa-earth-americas fa-xs" style="color: #707070;"></i>
+                                </div>
+                            </div>
                         </div>
-                        <span class="absolute bottom-2 start-2 text-white font-bold text-sm text-wrap w-4">Tina
-                            Doe</span>
-                    </div>
-                    <div
-                        class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative">
-                        <span
-                            class="absolute top-2 start-2 bg-blue-500 text-white font-bold text-xs px-1 rounded-lg">2</span>
-                        <div class="h-full ">
-                            <img src="https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                class="h-full rounded-t-lg" />
+                        <div class="col-span-1">
+                            <div class="flex w-full justify-end items-center px-2 xl:p-4 h-full">
+                                <i class="fa-solid fa-ellipsis fa-xl" style="color: #6b6b6b;"></i>
+                            </div>
                         </div>
-                        <span class="absolute bottom-2 start-2 text-white font-bold text-sm text-wrap w-4">Terry
-                            Adams</span>
-                    </div>
-                    <div
-                        class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative">
-                        <span
-                            class="absolute top-2 start-2 bg-blue-500 text-white font-bold text-xs px-1 rounded-lg">7</span>
-                        <div class="h-full ">
-                            <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                class="h-full rounded-t-lg" />
+                        <div id="publication-comment" class="col-span-3">
+                            <p class="p-2">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit illo exercitationem
+                                repudiandae voluptas consectetur velit natus laudantium? Sit atque et eligendi neque
+                                porro
+                                officia inventore temporibus, consequuntur repellat. Aut, quod?
+                            </p>
                         </div>
-                        <span class="absolute bottom-2 start-2 text-white font-bold text-sm text-wrap w-4">John
-                            Doe</span>
                     </div>
-                    <div
-                        class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative">
-                        <span
-                            class="absolute top-2 start-2 bg-blue-500 text-white font-bold text-xs px-1 rounded-lg">3</span>
-                        <div class="h-full ">
-                            <img src="https://images.unsplash.com/photo-1534179523731-b2922018150a?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                class="h-full rounded-t-lg" />
+                    <div class="h-72 xl:h-96 w-full">
+                        <img class="h-full w-full"
+                            src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                    </div>
+                    <div class="h-fit w-full flex items-center p-2">
+                        <ul
+                            class="inline-flex gap-2 items-center h-full justify-between w-full border-t border-b border-gray-300 py-1">
+                            <li class="sm:w-full">
+                                <button
+                                    class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
+                                    <i class="fa-solid fa-thumbs-up fa-lg" style="color: #5a5a5a;"></i>
+                                    <span class="text-xs font-bold text-gray-700">1256</span>
+                                </button>
+                            </li>
+                            <li class="sm:w-full">
+                                <button
+                                    class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
+                                    <i class="fa-solid fa-comment fa-lg" style="color: #5a5a5a;"></i>
+                                    <span class="text-xs font-bold text-gray-700">46</span>
+                                </button>
+                            </li>
+                            <li class="sm:w-full">
+                                <button
+                                    class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
+                                    <i class="fa-solid fa-share fa-lg" style="color: #5a5a5a;"></i>
+                                    <span class="text-xs font-bold text-gray-700">12</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hidden sm:block w-full p-4">
+                        <div class="w-full h-10 py-2 inline-flex items-center gap-2">
+                            <span class="h-10 w-10 rounded-full bg-slate-200">
+                                <img src="https://randomuser.me/api/portraits/men/91.jpg"
+                                    class="h-full w-full rounded-full" />
+                            </span>
+                            <div class="w-full">
+                                <input class="w-full h-10 rounded-full bg-slate-200 px-2 outline-none"
+                                    placeholder="Write a comment..." />
+                            </div>
                         </div>
-                        <span class="absolute bottom-2 start-2 text-white font-bold text-sm text-wrap w-4">Ashley
-                            Benson</span>
                     </div>
-                    <div class="h-44 w-20 sm:min-h-4 sm:min-w-20 flex items-center justify-center">
-                        <i class="fa-solid fa-spinner fa-spin fa-sm" style="color: #000fff;"></i>
+                </div>
+                <div class="bg-white grid h-fit mb-2 sm:rounded-lg sm:shadow xl:my-7" id="third-publication">
+                    <div class="grid grid-cols-3">
+                        <div class="col-span-2 flex p-2 xl:p-2 gap-2">
+                            <img class="h-12 w-12 bg-blue-500 rounded-full"
+                                src="https://randomuser.me/api/portraits/men/23.jpg" />
+                            <div class="flex flex-col">
+                                <div class="flex gap-2 items-center">
+                                    <h3 class="font-bold text-lg text-nowrap">Tyson Fury</h3>
+                                    <span class="h-1 w-1 bg-gray-700 rounded-full"></span>
+                                    <h3 class="font-bold text-sm text-blue-500">Following</h3>
+                                </div>
+                                <div class="inline-flex gap-2 items-center">
+                                    <span class="text-xs text-gray-400">3 days</span>
+                                    <span class="h-1 w-1 bg-gray-400 rounded-full"></span>
+                                    <i class="fa-solid fa-earth-americas fa-xs" style="color: #707070;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-1">
+                            <div class="flex w-full justify-end items-center px-2 xl:p-4 h-full">
+                                <i class="fa-solid fa-ellipsis fa-xl" style="color: #6b6b6b;"></i>
+                            </div>
+                        </div>
+                        <div id="publication-comment" class="col-span-3">
+                            <p class="p-2">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia voluptas aspernatur
+                                quam
+                                exercitationem ipsa impedit eos officiis! Dolorem veniam excepturi recusandae, expedita
+                                a
+                                molestiae ullam repellat ipsam magni eius qui?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="h-72 xl:h-96 w-full">
+                        <img class="h-full w-full"
+                            src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                    </div>
+                    <div class="h-fit w-full flex items-center p-2">
+                        <ul
+                            class="inline-flex gap-2 items-center h-full justify-between w-full border-b border-t border-gray-300 py-1">
+                            <li class="sm:w-full">
+                                <button
+                                    class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
+                                    <i class="fa-solid fa-thumbs-up fa-lg" style="color: #5a5a5a;"></i>
+                                    <span class="text-xs font-bold text-gray-700">+1 Mi</span>
+                                </button>
+                            </li>
+                            <li class="sm:w-full">
+                                <button
+                                    class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
+                                    <i class="fa-solid fa-comment fa-lg" style="color: #5a5a5a;"></i>
+                                    <span class="text-xs font-bold text-gray-700">5368</span>
+                                </button>
+                            </li>
+                            <li class="sm:w-full">
+                                <button
+                                    class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
+                                    <i class="fa-solid fa-share fa-lg" style="color: #5a5a5a;"></i>
+                                    <span class="text-xs font-bold text-gray-700">+20 k</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hidden sm:block w-full p-4">
+                        <div class="w-full h-10 py-2 inline-flex items-center gap-2">
+                            <span class="h-10 w-10 rounded-full bg-slate-200">
+                                <img src="https://randomuser.me/api/portraits/men/91.jpg"
+                                    class="h-full w-full rounded-full" />
+                            </span>
+                            <div class="w-full">
+                                <input class="w-full h-10 rounded-full bg-slate-200 px-2 outline-none"
+                                    placeholder="Write a comment..." />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-        </div>
-        <!-- End stories section -->
-        <div class="hidden sm:block w-full h-16 border-t bg-white rounded-b-lg shadow-lg  border-gray-200">
-            <ul class="flex justify-between w-full h-full items-center px-10 md:px-2">
-                <li
-                    class="flex gap-2 items-center md:px-10 sm:px-3 rounded-lg py-2 h-fit hover:bg-gray-300 duration-300">
-                    <i class="fa-solid fa-video" style="color: #f2072b;"></i>
-                    <span class="font-semibold">Live</span>
-                </li>
-                <li
-                    class="flex gap-2 items-center md:px-10 sm:px-3 rounded-lg py-2 h-fit hover:bg-gray-300 duration-300">
-                    <i class="fa-solid fa-images" style="color: #63E6BE;"></i>
-                    <span class="font-semibold">Photo/Video</span>
-                </li>
-                <li
-                    class="flex gap-2 items-center md:px-10 sm:px-3 rounded-lg py-2 h-fit hover:bg-gray-300 duration-300">
-                    <i class="fa-solid fa-face-smile" style="color: #FFD43B;"></i>
-                    <span class="font-semibold">Feelings</span>
-                </li>
-            </ul>
-        </div>
-        <!-- Publications section -->
-        <section id="publications" class="w-ful my-2 ">
-            <div class="bg-white grid h-fit mb-2 sm:rounded-lg sm:shadow" id="first-publication">
-                <div class="grid grid-cols-3">
-                    <div class="col-span-2 flex p-2 gap-2">
-                        <img class="h-12 w-12 bg-blue-500 rounded-full"
-                            src="https://randomuser.me/api/portraits/men/79.jpg" />
-                        <div class="flex flex-col">
-                            <div class="flex gap-2 items-center">
-                                <h3 class="font-bold text-lg text-nowrap">Eduard Doe</h3>
-                                <span class="h-1 w-1 bg-gray-700 rounded-full"></span>
-                                <h3 class="font-bold text-sm text-blue-500">Follow</h3>
-                            </div>
-                            <div class="inline-flex gap-2 items-center">
-                                <span class="text-xs text-gray-400">1 min</span>
-                                <span class="h-1 w-1 bg-gray-400 rounded-full"></span>
-                                <i class="fa-solid fa-earth-americas fa-xs" style="color: #707070;"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-span-1">
-                        <div class="flex w-full justify-end items-center px-2 h-full">
-                            <i class="fa-solid fa-ellipsis fa-xl" style="color: #6b6b6b;"></i>
-                        </div>
-                    </div>
-                    <div id="publication-comment" class="col-span-3">
-                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nostrum eveniet
-                            numquam! Voluptatibus voluptas ducimus nobis, soluta officia modi ullam magni, aliquam
-                            laudantium fugit, sit temporibus necessitatibus explicabo veniam ea.</p>
-                    </div>
-                </div>
-                <div class="h-72 w-full">
-                    <img class="h-full w-full"
-                        src="https://images.unsplash.com/photo-1707343843982-f8275f3994c5?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                </div>
-                <div class="h-fit w-full flex items-center p-2">
-                    <ul
-                        class="inline-flex py-1 gap-2 border-b border-t border-gray-200 items-center h-full justify-between w-full">
-                        <li class="sm:w-full">
-                            <button
-                                class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
-                                <i class="fa-solid fa-thumbs-up fa-lg" style="color: #5a5a5a;"></i>
-                                <span class="text-xs font-bold text-gray-700">Like</span>
-                            </button>
-                        </li>
-                        <li class="sm:w-full">
-                            <button
-                                class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
-                                <i class="fa-solid fa-comment fa-lg" style="color: #5a5a5a;"></i>
-                                <span class="text-xs font-bold text-gray-700">Comment</span>
-                            </button>
-                        </li>
-                        <li class="sm:w-full">
-                            <button
-                                class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
-                                <i class="fa-solid fa-share fa-lg" style="color: #5a5a5a;"></i>
-                                <span class="text-xs font-bold text-gray-700">Share</span>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="hidden sm:block w-full p-4">
-                    <div class="w-full h-10 py-2 inline-flex items-center gap-2">
-                        <span class="h-10 w-10 rounded-full bg-slate-200">
-                            <img src="https://randomuser.me/api/portraits/men/91.jpg"
-                                class="h-full w-full rounded-full" />
-                        </span>
-                        <div class="w-full">
-                            <input class="w-full h-10 rounded-full bg-slate-200 px-2 outline-none"
-                                placeholder="Write a comment..." />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white grid h-fit mb-2 sm:rounded-lg sm:shadow" id="second-publication">
-                <div class="grid grid-cols-3">
-                    <div class="col-span-2 flex p-2 gap-2">
-                        <img class="h-12 w-12 bg-blue-500 rounded-full"
-                            src="https://randomuser.me/api/portraits/men/59.jpg" />
-                        <div class="flex flex-col">
-                            <div class="flex gap-2 items-center">
-                                <h3 class="font-bold text-lg text-nowrap">Rick Ryan</h3>
-                                <span class="h-1 w-1 bg-gray-700 rounded-full"></span>
-                                <h3 class="font-bold text-sm text-blue-500">Following</h3>
-                            </div>
-                            <div class="inline-flex gap-2 items-center">
-                                <span class="text-xs text-gray-400">1 day</span>
-                                <span class="h-1 w-1 bg-gray-400 rounded-full"></span>
-                                <i class="fa-solid fa-earth-americas fa-xs" style="color: #707070;"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-span-1">
-                        <div class="flex w-full justify-end items-center px-2 h-full">
-                            <i class="fa-solid fa-ellipsis fa-xl" style="color: #6b6b6b;"></i>
-                        </div>
-                    </div>
-                    <div id="publication-comment" class="col-span-3">
-                        <p class="p-2">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit illo exercitationem
-                            repudiandae voluptas consectetur velit natus laudantium? Sit atque et eligendi neque porro
-                            officia inventore temporibus, consequuntur repellat. Aut, quod?
-                        </p>
-                    </div>
-                </div>
-                <div class="h-72 w-full">
-                    <img class="h-full w-full"
-                        src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                </div>
-                <div class="h-fit w-full flex items-center p-2">
-                    <ul
-                        class="inline-flex gap-2 items-center h-full justify-between w-full border-t border-b border-gray-300 py-1">
-                        <li class="sm:w-full">
-                            <button
-                                class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
-                                <i class="fa-solid fa-thumbs-up fa-lg" style="color: #5a5a5a;"></i>
-                                <span class="text-xs font-bold text-gray-700">1256</span>
-                            </button>
-                        </li>
-                        <li class="sm:w-full">
-                            <button
-                                class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
-                                <i class="fa-solid fa-comment fa-lg" style="color: #5a5a5a;"></i>
-                                <span class="text-xs font-bold text-gray-700">46</span>
-                            </button>
-                        </li>
-                        <li class="sm:w-full">
-                            <button
-                                class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
-                                <i class="fa-solid fa-share fa-lg" style="color: #5a5a5a;"></i>
-                                <span class="text-xs font-bold text-gray-700">12</span>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="hidden sm:block w-full p-4">
-                    <div class="w-full h-10 py-2 inline-flex items-center gap-2">
-                        <span class="h-10 w-10 rounded-full bg-slate-200">
-                            <img src="https://randomuser.me/api/portraits/men/91.jpg"
-                                class="h-full w-full rounded-full" />
-                        </span>
-                        <div class="w-full">
-                            <input class="w-full h-10 rounded-full bg-slate-200 px-2 outline-none"
-                                placeholder="Write a comment..." />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white grid h-fit mb-2 sm:rounded-lg sm:shadow" id="third-publication">
-                <div class="grid grid-cols-3">
-                    <div class="col-span-2 flex p-2 gap-2">
-                        <img class="h-12 w-12 bg-blue-500 rounded-full"
-                            src="https://randomuser.me/api/portraits/men/23.jpg" />
-                        <div class="flex flex-col">
-                            <div class="flex gap-2 items-center">
-                                <h3 class="font-bold text-lg text-nowrap">Tyson Fury</h3>
-                                <span class="h-1 w-1 bg-gray-700 rounded-full"></span>
-                                <h3 class="font-bold text-sm text-blue-500">Following</h3>
-                            </div>
-                            <div class="inline-flex gap-2 items-center">
-                                <span class="text-xs text-gray-400">3 days</span>
-                                <span class="h-1 w-1 bg-gray-400 rounded-full"></span>
-                                <i class="fa-solid fa-earth-americas fa-xs" style="color: #707070;"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-span-1">
-                        <div class="flex w-full justify-end items-center px-2 h-full">
-                            <i class="fa-solid fa-ellipsis fa-xl" style="color: #6b6b6b;"></i>
-                        </div>
-                    </div>
-                    <div id="publication-comment" class="col-span-3">
-                        <p class="p-2">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia voluptas aspernatur quam
-                            exercitationem ipsa impedit eos officiis! Dolorem veniam excepturi recusandae, expedita a
-                            molestiae ullam repellat ipsam magni eius qui?
-                        </p>
-                    </div>
-                </div>
-                <div class="h-72 w-full">
-                    <img class="h-full w-full"
-                        src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                </div>
-                <div class="h-fit w-full flex items-center p-2">
-                    <ul
-                        class="inline-flex gap-2 items-center h-full justify-between w-full border-b border-t border-gray-300 py-1">
-                        <li class="sm:w-full">
-                            <button
-                                class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
-                                <i class="fa-solid fa-thumbs-up fa-lg" style="color: #5a5a5a;"></i>
-                                <span class="text-xs font-bold text-gray-700">+1 Mi</span>
-                            </button>
-                        </li>
-                        <li class="sm:w-full">
-                            <button
-                                class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
-                                <i class="fa-solid fa-comment fa-lg" style="color: #5a5a5a;"></i>
-                                <span class="text-xs font-bold text-gray-700">5368</span>
-                            </button>
-                        </li>
-                        <li class="sm:w-full">
-                            <button
-                                class="rounded-xl bg-slate-100 gap-2 w-28 sm:w-full h-10 flex justify-center items-center hover:bg-slate-200">
-                                <i class="fa-solid fa-share fa-lg" style="color: #5a5a5a;"></i>
-                                <span class="text-xs font-bold text-gray-700">+20 k</span>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="hidden sm:block w-full p-4">
-                    <div class="w-full h-10 py-2 inline-flex items-center gap-2">
-                        <span class="h-10 w-10 rounded-full bg-slate-200">
-                            <img src="https://randomuser.me/api/portraits/men/91.jpg"
-                                class="h-full w-full rounded-full" />
-                        </span>
-                        <div class="w-full">
-                            <input class="w-full h-10 rounded-full bg-slate-200 px-2 outline-none"
-                                placeholder="Write a comment..." />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End of publications section -->
-        <!-- Loading publications section-->
-        <section id="loading-publications"
-            class="w-full flex flex-col gap-4 justify-center items-center py-10 bg-gray-300 sm:rounded-lg">
-            <i class="fa-solid fa-spinner fa-spin fa-xl" style="color: #383838;"></i>
-            <span class="font-bold text-gray-700">Loading more publications...
-            </span>
-        </section>
-        <!-- End loading publications section-->
-    </main>
+            <!-- End of publications section -->
+            <!-- Loading publications section-->
+            <section id="loading-publications"
+                class="w-full flex flex-col gap-4 justify-center items-center py-10 bg-gray-300 sm:rounded-lg">
+                <i class="fa-solid fa-spinner fa-spin fa-xl" style="color: #383838;"></i>
+                <span class="font-bold text-gray-700">Loading more publications...
+                </span>
+            </section>
+            <!-- End loading publications section-->
+        </main>
+        <aside
+            class="hidden lg:col-span-2 xl:col-span-1 xl:flex xl:flex-col lg:flex lg:flex-col xl:overflow-y-auto h-full xl:w-full bg-red-500  xl:items-start xl:max-h-screen">
+            asdadsa
+        </aside>
+    </div>
 </body>
 
 </html>
