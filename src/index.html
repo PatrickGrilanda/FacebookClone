@@ -12,62 +12,81 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-slate-200 overflow-hidden">
+<body class="bg-slate-200 lg:overflow-y-auto xl:overflow-hidden">
     <!-- Heading -->
-    <header class="w-full p-2 sm:p-4 border-b border-gray-300 shadow bg-white h-auto xl:sticky xl:top-0 xl:z-20">
+    <header class="w-full p-2 sm:p-4 border-b border-gray-300 shadow bg-white h-auto lg:sticky lg:top-0 lg:z-20">
         <section id="heading" class="flex sm:grid sm:grid-cols-4 justify-between items-center h-7 mb-2">
             <div id="logo" class="sm:flex items-center gap-4">
                 <a href="/" class="font-bold text-3xl text-blue-600">facebook</a>
                 <span
-                    class="h-8 w-8  sm:hidden  rounded-full bg-slate-200 hover:bg-slate-300 md:flex items-center justify-center hidden">
+                    class="h-8 w-8  sm:hidden xl:hidden  rounded-full bg-slate-200 hover:bg-slate-300 md:flex items-center justify-center hidden">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </span>
+                <div class="xl:flex items-center w-full hidden">
+                    <input type="text"
+                        class="hidden sm:flex w-full h-10 rounded-full bg-slate-200 px-2 outline-none placeholder:text-gray-800"
+                        placeholder="Search on Facebook" />
+                </div>
             </div>
             <div id="navbar" class="hidden sm:col-span-2 sm:flex sm:items-center h-full w-full">
-                <ul class="list-none flex items-center h-full w-full justify-around">
-                    <li class="h-full flex items-center justify-center relative hover:bg-slate-200 w-12 rounded-lg">
+                <ul class="list-none flex items-center h-full w-full justify-around lg:justify-evenly">
+                    <li
+                        class="h-full flex items-center justify-center relative hover:bg-slate-200 w-12 rounded-lg cursor-pointer">
                         <i class="fa-solid fa-house fa-lg" style="color: #1f71ff;"></i>
                         <span class="absolute top-0 -end-3 rounded-lg text-white bg-red-600 text-xs px-1">
                             15+
                         </span>
                     </li>
-                    <li class="h-full flex items-center justify-center hover:bg-slate-200 w-12 rounded-lg">
+                    <li
+                        class="h-full flex items-center justify-center hover:bg-slate-200 w-12 rounded-lg cursor-pointer">
                         <i class="fa-solid fa-users fa-lg"></i>
                     </li>
-                    <li class="h-full flex items-center justify-center hover:bg-slate-200 w-12 rounded-lg">
+                    <li
+                        class="h-full flex items-center justify-center hover:bg-slate-200 w-12 rounded-lg cursor-pointer">
                         <i class="fa-solid fa-circle-play fa-lg"></i>
                     </li>
-                    <li class="h-full flex items-center justify-center hover:bg-slate-200 w-12 rounded-lg">
+                    <li
+                        class="h-full flex items-center justify-center hover:bg-slate-200 w-12 rounded-lg cursor-pointer">
                         <i class="fa-solid fa-store fa-lg"></i>
                     </li>
-                    <li class="h-full flex items-center justify-center hover:bg-slate-200 w-12 rounded-lg">
+                    <li
+                        class="h-full flex items-center justify-center hover:bg-slate-200 w-12 rounded-lg lg:hidden cursor-pointer">
                         <i class="fa-solid fa-bars fa-lg"></i>
+                    </li>
+                    <li
+                        class="hidden lg:flex h-full items-center justify-center hover:bg-slate-200 w-12 rounded-lg cursor-pointer">
+                        <i class="fa-solid fa-users fa-lg"></i>
                     </li>
                 </ul>
             </div>
-            <div id="tablet-navbar" class="h-full w-full  items-center sm:flex hidden">
+            <div id="tablet-navbar" class="h-full w-full items-center sm:flex hidden lg:justify-end">
                 <ul class="flex items-center gap-2">
                     <li>
                         <span
-                            class="h-10 w-10  flex items-center justify-center rounded-full bg-slate-200 hover:bg-slate-300">
+                            class="h-10 w-10  flex items-center justify-center rounded-full bg-slate-200 hover:bg-slate-300 cursor-pointer">
                             <i class="fa-solid fa-plus"></i>
                         </span>
                     </li>
                     <li>
                         <span
-                            class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-200 hover:bg-slate-300">
+                            class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-200 hover:bg-slate-300 lg:relative cursor-pointer">
                             <i class="fa-solid fa-comment-dots"></i>
+
+                            <span
+                                class=" hidden w-4 h-4 lg:block absolute top-0 -end-0 bg-red-600 rounded-full text-white text-xs px-1">
+                                4
+                            </span>
                         </span>
                     </li>
                     <li>
                         <span
-                            class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-200 hover:bg-slate-300">
+                            class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-200 hover:bg-slate-300 cursor-pointer">
                             <i class="fa-solid fa-bell"></i>
                         </span>
                     </li>
                     <li>
                         <span
-                            class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-200 hover:bg-slate-300">
+                            class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-200 hover:bg-slate-300 cursor-pointer">
                             <img src="https://randomuser.me/api/portraits/men/91.jpg"
                                 class="h-full w-full rounded-full" />
                         </span>
@@ -173,11 +192,48 @@
                     </div>
                     <span class="font-semibold text-gray-800">See More</span>
                 </li>
-                <hr class="w-full" />
+            </ul>
+            <hr class="w-3/4 border border-gray-300" />
+            <div class="flex w-full justify-start items-center p-2">
+                <h4 class="font-semibold text-gray-700">Your shortcuts</h4>
+            </div>
+            <ul class="list-none flex-col h-fit xl:w-3/4 lg:w-full">
+                <li class="flex items-center gap-2 mb-2 hover:bg-gray-300 p-2 rounded-lg cursor-pointer">
+                    <i data-visualcompletion="css-img" class=""
+                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/4GR4KRf3hN2.png?_nc_eui2=AeHnG0wI8Oyvx7akFRWpaPDuiXYVTRy2fzKJdhVNHLZ_MtH3zu2eqdFf4Rg8nCHdcxu7M3v6PiYdDPTChYhbrYkS&quot;); background-position: 0px -296px; background-size: auto; width: 36px; height: 36px; background-repeat: no-repeat; display: inline-block;"></i>
+                    <span class="font-semibold text-gray-800">Friends</span>
+                </li>
+                <li class="flex items-center gap-2 mb-2 hover:bg-gray-300 p-2 rounded-lg cursor-pointer">
+                    <i data-visualcompletion="css-img" class=""
+                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/4GR4KRf3hN2.png?_nc_eui2=AeHnG0wI8Oyvx7akFRWpaPDuiXYVTRy2fzKJdhVNHLZ_MtH3zu2eqdFf4Rg8nCHdcxu7M3v6PiYdDPTChYhbrYkS&quot;); background-position: 0px -185px; background-size: auto; width: 36px; height: 36px; background-repeat: no-repeat; display: inline-block;"></i>
+                    <span class="font-semibold text-gray-800">Saved</span>
+                </li>
+                <li class="flex items-center gap-2 mb-2 hover:bg-gray-300 p-2 rounded-lg cursor-pointer">
+                    <i data-visualcompletion="css-img" class=""
+                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/4GR4KRf3hN2.png?_nc_eui2=AeHnG0wI8Oyvx7akFRWpaPDuiXYVTRy2fzKJdhVNHLZ_MtH3zu2eqdFf4Rg8nCHdcxu7M3v6PiYdDPTChYhbrYkS&quot;); background-position: 0px -444px; background-size: auto; width: 36px; height: 36px; background-repeat: no-repeat; display: inline-block;"></i>
+                    <span class="font-semibold text-gray-800">Memories</span>
+                </li>
+                <li class="flex items-center gap-2 mb-2 hover:bg-gray-300 p-2 rounded-lg cursor-pointer">
+                    <i data-visualcompletion="css-img" class=""
+                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/4GR4KRf3hN2.png?_nc_eui2=AeHnG0wI8Oyvx7akFRWpaPDuiXYVTRy2fzKJdhVNHLZ_MtH3zu2eqdFf4Rg8nCHdcxu7M3v6PiYdDPTChYhbrYkS&quot;); background-position: 0px -37px; background-size: auto; width: 36px; height: 36px; background-repeat: no-repeat; display: inline-block;"></i>
+                    <span class="font-semibold text-gray-800">Groups</span>
+                </li>
+                <li class="flex items-center gap-2 mb-2 hover:bg-gray-300 p-2 rounded-lg cursor-pointer">
+                    <div class="bg-slate-300 hover:bg-slate-400 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true">
+                            <g fill-rule="evenodd" transform="translate(-448 -544)">
+                                <path fill-rule="nonzero"
+                                    d="M452.707 549.293a1 1 0 0 0-1.414 1.414l4 4a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L456 552.586l-3.293-3.293z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                    <span class="font-semibold text-gray-800">See More</span>
+                </li>
             </ul>
         </aside>
         <main
-            class="overflow-hidden xl:overflow-y-auto lg:col-span-4 xl:col-span-2 lg:px-10 xl:px-16 xl:pb-40 sm:px-16 md:px-20 xl:p-0 py-2 xl:max-h-screen no-scrollbar">
+            class="overflow-hidden lg:overflow-y-auto lg:col-span-4 xl:col-span-2 lg:px-10 2xl:px-24 xl:px-10 xl:pb-40 sm:px-10 md:px-20 py-2 xl:max-h-screen no-scrollbar">
             <div class="sm:flex sm:flex-col-reverse">
                 <!-- What is on your mind section -->
                 <section id="publish"
@@ -192,8 +248,8 @@
                     </div>
                     <div class="col-span-4 xl:col-span-7">
                         <input
-                            class="bg-slate-200 w-full rounded-full placeholder:text-wrap placeholder:text-gray-800 placeholder:text-sm placeholder:px-2 h-10"
-                            placeholder="What is on your mind ?" />
+                            class="bg-slate-200 w-full rounded-full placeholder:text-wrap placeholder:text-gray-800 placeholder:text-sm placeholder:px-2 h-10 cursor-pointer"
+                            disabled placeholder="What is on your mind ?" />
                     </div>
                     <div class="h-full xl:hidden">
                         <div class="flex flex-col justify-center items-center h-full">
@@ -206,18 +262,18 @@
                 <section id="stories" class="bg-white sm:bg-transparent my-1 py-2 ps-4 sm:ps-0  w-full">
                     <div class="overflow-x-auto no-scrollbar  inline-flex w-full gap-2">
                         <div
-                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden relative shadow-sm">
+                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden relative shadow-sm cursor-pointer">
                             <div class="h-1/2 sm:h-4/5">
                                 <img src="https://randomuser.me/api/portraits/men/91.jpg"
                                     class="h-full w-full rounded-t-lg" />
                             </div>
-                            <div class="h-1/2 sm:h-1/5 flex items-end pb-1">
+                            <div class="h-1/2 sm:h-1/5 flex items-end pb-1 ">
                                 <p class="font-bold sm:font-medium sm:text-sm w-full text-wrap text-center"> Post on
                                     your
                                     story</p>
                             </div>
                             <div
-                                class="bg-transparent inset-0 flex items-center sm:items-end sm:mb-6 justify-center absolute">
+                                class="bg-transparent inset-0 flex items-center sm:items-end sm:mb-6 justify-center absolute cursor-pointer">
                                 <span
                                     class="h-10 w-10 border-4 border-white bg-blue-500 rounded-full flex items-center justify-center">
                                     <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
@@ -225,7 +281,7 @@
                             </div>
                         </div>
                         <div
-                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative">
+                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative cursor-pointer">
                             <span
                                 class="absolute top-2 start-2 bg-blue-500 text-white font-bold text-xs px-1 rounded-lg">21</span>
                             <div class="h-full ">
@@ -236,7 +292,7 @@
                                 Doe</span>
                         </div>
                         <div
-                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative">
+                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative cursor-pointer">
                             <span
                                 class="absolute top-2 start-2 bg-blue-500 text-white font-bold text-xs px-1 rounded-lg">2</span>
                             <div class="h-full ">
@@ -247,7 +303,7 @@
                                 Adams</span>
                         </div>
                         <div
-                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative">
+                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative cursor-pointer">
                             <span
                                 class="absolute top-2 start-2 bg-blue-500 text-white font-bold text-xs px-1 rounded-lg">7</span>
                             <div class="h-full ">
@@ -258,7 +314,7 @@
                                 Doe</span>
                         </div>
                         <div
-                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative">
+                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative cursor-pointer">
                             <span
                                 class="absolute top-2 start-2 bg-blue-500 text-white font-bold text-xs px-1 rounded-lg">3</span>
                             <div class="h-full ">
@@ -278,17 +334,17 @@
             <div class="hidden sm:block w-full h-16 border-t bg-white rounded-b-lg shadow-lg  border-gray-200">
                 <ul class="flex justify-between w-full h-full items-center px-10 md:px-2">
                     <li
-                        class="flex gap-2 items-center md:px-10 sm:px-3 rounded-lg py-2 h-fit hover:bg-gray-300 duration-300">
+                        class="flex gap-2 items-center md:px-10 sm:px-3 rounded-lg py-2 h-fit hover:bg-gray-300 duration-300 cursor-pointer">
                         <i class="fa-solid fa-video" style="color: #f2072b;"></i>
                         <span class="font-semibold">Live</span>
                     </li>
                     <li
-                        class="flex gap-2 items-center md:px-10 sm:px-3 rounded-lg py-2 h-fit hover:bg-gray-300 duration-300">
+                        class="flex gap-2 items-center md:px-10 sm:px-3 rounded-lg py-2 h-fit hover:bg-gray-300 duration-300 cursor-pointer">
                         <i class="fa-solid fa-images" style="color: #63E6BE;"></i>
                         <span class="font-semibold">Photo/Video</span>
                     </li>
                     <li
-                        class="flex gap-2 items-center md:px-10 sm:px-3 rounded-lg py-2 h-fit hover:bg-gray-300 duration-300">
+                        class="flex gap-2 items-center md:px-10 sm:px-3 rounded-lg py-2 h-fit hover:bg-gray-300 duration-300 cursor-pointer">
                         <i class="fa-solid fa-face-smile" style="color: #FFD43B;"></i>
                         <span class="font-semibold">Feelings</span>
                     </li>
@@ -305,7 +361,7 @@
                                 <div class="flex gap-2 items-center">
                                     <h3 class="font-bold text-lg text-nowrap">Eduard Doe</h3>
                                     <span class="h-1 w-1 bg-gray-700 rounded-full"></span>
-                                    <h3 class="font-bold text-sm text-blue-500">Follow</h3>
+                                    <h3 class="font-bold text-sm text-blue-500 cursor-pointer">Follow</h3>
                                 </div>
                                 <div class="inline-flex gap-2 items-center">
                                     <span class="text-xs text-gray-400">1 min</span>
