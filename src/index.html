@@ -12,7 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-slate-200 lg:overflow-y-auto xl:overflow-hidden">
+<body class="bg-slate-200 lg:overflow-y-auto xl:overflow-hidden box-content">
     <!-- Heading -->
     <header class="w-full p-2 sm:p-4 border-b border-gray-300 shadow bg-white h-auto lg:sticky lg:top-0 lg:z-20">
         <section id="heading" class="flex sm:grid sm:grid-cols-4 justify-between items-center h-7 mb-2">
@@ -88,7 +88,7 @@
                         <span
                             class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-200 hover:bg-slate-300 cursor-pointer">
                             <img src="https://randomuser.me/api/portraits/men/91.jpg"
-                                class="h-full w-full rounded-full" />
+                                class="h-full w-full rounded-full object-cover" />
                         </span>
                     </li>
                 </ul>
@@ -146,12 +146,13 @@
         </section>
     </header>
     <!-- End Heading-->
-    <div class="xl:grid-cols-4 lg:grid-cols-6 lg:grid h-full w-full">
+    <div class="xl:grid-cols-4 lg:grid-cols-6 lg:grid h-full w-full ">
         <aside class="hidden xl:block xl:w-full xl:overflow-y-auto xl:max-h-screen px-2 py-4">
             <ul class="list-none flex-col h-fit xl:w-3/4 lg:w-full">
                 <li class="flex items-center gap-2 mb-2 hover:bg-gray-300 p-2 rounded-lg cursor-pointer">
                     <div class="h-8 w-8  bg-slate-200 rounded-full">
-                        <img src="https://randomuser.me/api/portraits/men/91.jpg" class="w-full h-full rounded-full">
+                        <img src="https://randomuser.me/api/portraits/men/91.jpg"
+                            class="w-full h-full rounded-full object-cover">
                     </div>
                     <span class="font-semibold text-gray-800">Paul Smith</span>
                 </li>
@@ -241,7 +242,7 @@
                     <div class="xl:flex xl:justify-center xl:w-full">
                         <div class="h-12 w-12  bg-slate-200 rounded-full relative">
                             <img src="https://randomuser.me/api/portraits/men/91.jpg"
-                                class="w-full h-full rounded-full">
+                                class="w-full h-full rounded-full object-cover">
                             <span
                                 class="h-4 w-4 border-2 border-white  rounded-full bg-green-400 bottom-0 end-0 absolute z-10"></span>
                         </div>
@@ -262,10 +263,10 @@
                 <section id="stories" class="bg-white sm:bg-transparent my-1 py-2 ps-4 sm:ps-0  w-full">
                     <div class="overflow-x-auto no-scrollbar  inline-flex w-full gap-2">
                         <div
-                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden relative shadow-sm cursor-pointer">
+                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white  border rounded-lg flex flex-col overflow-hidden relative shadow cursor-pointer">
                             <div class="h-1/2 sm:h-4/5">
                                 <img src="https://randomuser.me/api/portraits/men/91.jpg"
-                                    class="h-full w-full rounded-t-lg" />
+                                    class="h-full object-cover w-full rounded-t-lg " />
                             </div>
                             <div class="h-1/2 sm:h-1/5 flex items-end pb-1 ">
                                 <p class="font-bold sm:font-medium sm:text-sm w-full text-wrap text-center"> Post on
@@ -281,45 +282,45 @@
                             </div>
                         </div>
                         <div
-                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative cursor-pointer">
+                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow relative cursor-pointer">
                             <span
                                 class="absolute top-2 start-2 bg-blue-500 text-white font-bold text-xs px-1 rounded-lg">21</span>
                             <div class="h-full ">
                                 <img src="https://images.unsplash.com/photo-1501426026826-31c667bdf23d?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    class="h-full rounded-t-lg" />
+                                    class="h-full rounded-t-lg object-cover" />
                             </div>
                             <span class="absolute bottom-2 start-2 text-white font-bold text-sm text-wrap w-4">Tina
                                 Doe</span>
                         </div>
                         <div
-                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative cursor-pointer">
+                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow relative cursor-pointer">
                             <span
                                 class="absolute top-2 start-2 bg-blue-500 text-white font-bold text-xs px-1 rounded-lg">2</span>
                             <div class="h-full ">
                                 <img src="https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    class="h-full rounded-t-lg" />
+                                    class="h-full rounded-t-lg object-cover" />
                             </div>
                             <span class="absolute bottom-2 start-2 text-white font-bold text-sm text-wrap w-4">Terry
                                 Adams</span>
                         </div>
                         <div
-                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative cursor-pointer">
+                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow relative cursor-pointer">
                             <span
                                 class="absolute top-2 start-2 bg-blue-500 text-white font-bold text-xs px-1 rounded-lg">7</span>
                             <div class="h-full ">
                                 <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    class="h-full rounded-t-lg" />
+                                    class="h-full rounded-t-lg object-cover" />
                             </div>
                             <span class="absolute bottom-2 start-2 text-white font-bold text-sm text-wrap w-4">John
                                 Doe</span>
                         </div>
                         <div
-                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow-sm relative cursor-pointer">
+                            class="h-44 min-w-24 sm:min-h-56 sm:min-w-36 bg-white border rounded-lg flex flex-col overflow-hidden shadow relative cursor-pointer">
                             <span
                                 class="absolute top-2 start-2 bg-blue-500 text-white font-bold text-xs px-1 rounded-lg">3</span>
                             <div class="h-full ">
                                 <img src="https://images.unsplash.com/photo-1534179523731-b2922018150a?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    class="h-full rounded-t-lg" />
+                                    class="h-full rounded-t-lg object-cover" />
                             </div>
                             <span class="absolute bottom-2 start-2 text-white font-bold text-sm text-wrap w-4">Ashley
                                 Benson</span>
@@ -355,7 +356,7 @@
                 <div class="bg-white grid h-fit mb-2 sm:rounded-lg sm:shadow xl:my-7" id="first-publication">
                     <div class="grid grid-cols-3">
                         <div class="col-span-2 flex p-2 xl:p-4 gap-2">
-                            <img class="h-12 w-12 bg-blue-500 rounded-full"
+                            <img class="h-12 w-12 rounded-full object-cover"
                                 src="https://randomuser.me/api/portraits/men/79.jpg" />
                             <div class="flex flex-col">
                                 <div class="flex gap-2 items-center">
@@ -383,7 +384,7 @@
                         </div>
                     </div>
                     <div class="h-72 xl:h-96 w-full">
-                        <img class="h-full w-full"
+                        <img class="h-full w-full object-cover"
                             src="https://images.unsplash.com/photo-1707343843982-f8275f3994c5?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
                     </div>
                     <div class="h-fit w-full flex items-center p-2">
@@ -416,7 +417,7 @@
                         <div class="w-full h-10 py-2 inline-flex items-center gap-2">
                             <span class="h-10 w-10 rounded-full bg-slate-200">
                                 <img src="https://randomuser.me/api/portraits/men/91.jpg"
-                                    class="h-full w-full rounded-full" />
+                                    class="h-full w-full rounded-full object-cover" />
                             </span>
                             <div class="w-full">
                                 <input class="w-full h-10 rounded-full bg-slate-200 px-2 outline-none"
@@ -428,7 +429,7 @@
                 <div class="bg-white grid h-fit mb-2 sm:rounded-lg sm:shadow xl:my-7" id="second-publication">
                     <div class="grid grid-cols-3">
                         <div class="col-span-2 flex p-2 xl:p-4 gap-2">
-                            <img class="h-12 w-12 bg-blue-500 rounded-full"
+                            <img class="h-12 w-12 bg-blue-500 rounded-full object-cover"
                                 src="https://randomuser.me/api/portraits/men/59.jpg" />
                             <div class="flex flex-col">
                                 <div class="flex gap-2 items-center">
@@ -458,7 +459,7 @@
                         </div>
                     </div>
                     <div class="h-72 xl:h-96 w-full">
-                        <img class="h-full w-full"
+                        <img class="h-full w-full object-cover"
                             src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
                     </div>
                     <div class="h-fit w-full flex items-center p-2">
@@ -491,7 +492,7 @@
                         <div class="w-full h-10 py-2 inline-flex items-center gap-2">
                             <span class="h-10 w-10 rounded-full bg-slate-200">
                                 <img src="https://randomuser.me/api/portraits/men/91.jpg"
-                                    class="h-full w-full rounded-full" />
+                                    class="h-full w-full rounded-full object-cover" />
                             </span>
                             <div class="w-full">
                                 <input class="w-full h-10 rounded-full bg-slate-200 px-2 outline-none"
@@ -503,7 +504,7 @@
                 <div class="bg-white grid h-fit mb-2 sm:rounded-lg sm:shadow xl:my-7" id="third-publication">
                     <div class="grid grid-cols-3">
                         <div class="col-span-2 flex p-2 xl:p-2 gap-2">
-                            <img class="h-12 w-12 bg-blue-500 rounded-full"
+                            <img class="h-12 w-12rounded-full object-cover"
                                 src="https://randomuser.me/api/portraits/men/23.jpg" />
                             <div class="flex flex-col">
                                 <div class="flex gap-2 items-center">
@@ -534,7 +535,7 @@
                         </div>
                     </div>
                     <div class="h-72 xl:h-96 w-full">
-                        <img class="h-full w-full"
+                        <img class="h-full w-full object-cover"
                             src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
                     </div>
                     <div class="h-fit w-full flex items-center p-2">
@@ -567,7 +568,7 @@
                         <div class="w-full h-10 py-2 inline-flex items-center gap-2">
                             <span class="h-10 w-10 rounded-full bg-slate-200">
                                 <img src="https://randomuser.me/api/portraits/men/91.jpg"
-                                    class="h-full w-full rounded-full" />
+                                    class="h-full w-full rounded-full object-cover" />
                             </span>
                             <div class="w-full">
                                 <input class="w-full h-10 rounded-full bg-slate-200 px-2 outline-none"
@@ -588,8 +589,139 @@
             <!-- End loading publications section-->
         </main>
         <aside
-            class="hidden lg:col-span-2 xl:col-span-1 xl:flex xl:flex-col lg:flex lg:flex-col xl:overflow-y-auto h-full xl:w-full bg-red-500  xl:items-start xl:max-h-screen">
-            asdadsa
+            class="hidden lg:col-span-2 xl:col-span-1 xl:flex xl:flex-col lg:flex lg:flex-col xl:overflow-y-auto h-full xl:w-full xl:items-end xl:max-h-screen box-content pb-4">
+            <div class="w-4/5 h-full py-4 ps-2 pe-4">
+                <div class="flex flex-col items-start gap-2">
+                    <h4 class="font-semibold text-gray-600 text-lg">Sponsored</h4>
+                    <ul class="list-none flex flex-col h-fit w-full gap-1">
+                        <li
+                            class="grid grid-cols-2 items-center p-2 gap-1 rounded-lg hover:bg-slate-300 cursor-pointer w-full h-28 group relative box-content ">
+                            <div class="h-ful flex items-center justify-start">
+                                <img src="
+                                https://images.unsplash.com/photo-1543062370-c0f03471ae6b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="object-cover 2xl:max-h-36 2xl:max-w-36 xl:max-h-28 xl:max-w-28 lg:max-w-24 lg:max-h-24 rounded-lg" />
+                            </div>
+                            <div class="">
+                                <span class="font-semibold text-gray-800 lg:text-sm xl:text-lg">Lorem ipsum dolor sit
+                                    amet
+                                    consectetur
+                                    adipisicing elit.</span>
+                                <span class="text-sm text-gray-500 lg:text-xs xl:text-sm">www.loremipsum.com</span>
+                            </div>
+                            <span
+                                class="group-hover:flex absolute hidden top-2 end-2 bg-white rounded-full h-10 w-10 items-center justify-center hover:bg-slate-200">
+                                <i class="fa-solid fa-ellipsis fa-lg"></i>
+                            </span>
+                        </li>
+                        <li
+                            class="grid grid-cols-2 items-center p-2 gap-1 rounded-lg hover:bg-slate-300 cursor-pointer w-full h-28 group relative box-content ">
+                            <div class="h-ful flex items-center justify-start">
+                                <img src="https://images.unsplash.com/photo-1671720410284-404fbdcc73e7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="object-cover 2xl:max-h-36 2xl:max-w-36 xl:max-h-28 xl:max-w-28 lg:max-w-24 lg:max-h-24 rounded-lg" />
+                            </div>
+                            <div class="">
+                                <span class="font-semibold text-gray-800 lg:text-sm xl:text-lg">Lorem ipsum dolor sit
+                                    amet
+                                    consectetur
+                                    adipisicing elit.</span>
+                                <span class="text-sm text-gray-500 lg:text-xs xl:text-sm">www.loremipsum.com</span>
+                            </div>
+                            <span
+                                class="group-hover:flex absolute hidden top-2 end-2 bg-white rounded-full h-10 w-10 items-center justify-center hover:bg-slate-200">
+                                <i class="fa-solid fa-ellipsis fa-lg"></i>
+                            </span>
+                        </li>
+                    </ul>
+                    <hr class="w-full border border-gray-300 my-2" />
+                    <h4 class="font-semibold text-gray-600 text-lg">Contacts</h4>
+                    <ul class="list-none flex flex-col gap-2 w-full">
+                        <li
+                            class="w-full group hover:bg-slate-300 p-2 rounded-lg h-fit flex gap-2 items-center cursor-pointer">
+                            <img class="h-10 w-10 rounded-full object-cover"
+                                src="https://randomuser.me/api/portraits/men/79.jpg" />
+                            <span class="font-semibold text-gray-800">Eduard Doe</span>
+                        </li>
+                        <li
+                            class="w-full group hover:bg-slate-300 p-2 rounded-lg h-fit flex gap-2 items-center cursor-pointer">
+                            <img class="h-10 w-10 rounded-full object-cover"
+                                src="https://randomuser.me/api/portraits/men/59.jpg" />
+                            <span class="font-semibold text-gray-800">Rick Ryan</span>
+                        </li>
+                        <li
+                            class="w-full group hover:bg-slate-300 p-2 rounded-lg h-fit flex gap-2 items-center cursor-pointer">
+                            <img class="h-10 w-10 rounded-full object-cover"
+                                src="https://randomuser.me/api/portraits/men/23.jpg" />
+                            <span class="font-semibold text-gray-800">Tyson Fury</span>
+                        </li>
+                        <li
+                            class="w-full group hover:bg-slate-300 p-2 rounded-lg h-fit flex gap-2 items-center cursor-pointer">
+                            <img class="h-10 w-10 rounded-full object-cover"
+                                src="https://randomuser.me/api/portraits/women/79.jpg" />
+                            <span class="font-semibold text-gray-800">Ashley Benson</span>
+                        </li>
+                        <li
+                            class="w-full group hover:bg-slate-300 p-2 rounded-lg h-fit flex gap-2 items-center cursor-pointer">
+                            <img class="h-10 w-10 rounded-full object-cover"
+                                src="https://randomuser.me/api/portraits/men/2.jpg" />
+                            <span class="font-semibold text-gray-800">Terry Adams</span>
+                        </li>
+                        <li
+                            class="w-full group hover:bg-slate-300 p-2 rounded-lg h-fit flex gap-2 items-center cursor-pointer">
+                            <img class="h-10 w-10 rounded-full object-cover"
+                                src="https://randomuser.me/api/portraits/women/14.jpg" />
+                            <span class="font-semibold text-gray-800">Tina Doe</span>
+                        </li>
+                        <li
+                            class="w-full group hover:bg-slate-300 p-2 rounded-lg h-fit flex gap-2 items-center cursor-pointer">
+                            <img class="h-10 w-10 rounded-full object-cover"
+                                src="https://randomuser.me/api/portraits/women/91.jpg" />
+                            <span class="font-semibold text-gray-800">Jane Doe</span>
+                        </li>
+                        <li
+                            class="w-full group hover:bg-slate-300 p-2 rounded-lg h-fit flex gap-2 items-center cursor-pointer">
+                            <img class="h-10 w-10 rounded-full object-cover"
+                                src="https://randomuser.me/api/portraits/women/3.jpg" />
+                            <span class="font-semibold text-gray-800">Eva Doe</span>
+                        </li>
+                        <li
+                            class="w-full group hover:bg-slate-300 p-2 rounded-lg h-fit flex gap-2 items-center cursor-pointer">
+                            <img class="h-10 w-10 rounded-full object-cover"
+                                src="https://randomuser.me/api/portraits/men/1.jpg" />
+                            <span class="font-semibold text-gray-800">John Doe</span>
+                        </li>
+                        <li
+                            class="w-full group hover:bg-slate-300 p-2 rounded-lg h-fit flex gap-2 items-center cursor-pointer">
+                            <img class="h-10 w-10 rounded-full object-cover"
+                                src="https://randomuser.me/api/portraits/men/23.jpg" />
+                            <span class="font-semibold text-gray-800">Tyson Fury</span>
+                        </li>
+                        <li
+                            class="w-full group hover:bg-slate-300 p-2 rounded-lg h-fit flex gap-2 items-center cursor-pointer">
+                            <img class="h-10 w-10 rounded-full object-cover"
+                                src="https://randomuser.me/api/portraits/women/79.jpg" />
+                            <span class="font-semibold text-gray-800">Ashley Benson</span>
+                        </li>
+                        <li
+                            class="w-full group hover:bg-slate-300 p-2 rounded-lg h-fit flex gap-2 items-center cursor-pointer">
+                            <img class="h-10 w-10 rounded-full object-cover"
+                                src="https://randomuser.me/api/portraits/men/2.jpg" />
+                            <span class="font-semibold text-gray-800">Terry Adams</span>
+                        </li>
+                        <li
+                            class="w-full group hover:bg-slate-300 p-2 rounded-lg h-fit flex gap-2 items-center cursor-pointer">
+                            <img class="h-10 w-10 rounded-full object-cover"
+                                src="https://randomuser.me/api/portraits/women/14.jpg" />
+                            <span class="font-semibold text-gray-800">Tina Doe</span>
+                        </li>
+                        <li
+                            class="w-full group hover:bg-slate-300 p-2 rounded-lg h-fit flex gap-2 items-center cursor-pointer">
+                            <img class="h-10 w-10 rounded-full object-cover"
+                                src="https://randomuser.me/api/portraits/women/91.jpg" />
+                            <span class="font-semibold text-gray-800">Jane Doe</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </aside>
     </div>
 </body>
